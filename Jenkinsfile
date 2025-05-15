@@ -10,7 +10,7 @@ pipeline {
         // will be set to the location of the SSH key file that is temporarily created
         SSH_KEY_FILE = credentials('ssh_aws_access')
 
-        ECR_REGISTRY = '524196012679.dkr.ecr.eu-central-1.amazonaws.com/sg/java-app-demos' // SET VALUE
+        ECR_REGISTRY = '524196012679.dkr.ecr.eu-central-1.amazonaws.com' // SET VALUE
         DOCKER_USER = 'AWS'
         DOCKER_PWD = credentials('ecr-repo-pwd')
         CONTAINER_PORT = '8080' // SET VALUE
