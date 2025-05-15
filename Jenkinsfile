@@ -13,7 +13,7 @@ pipeline {
         ECR_REGISTRY = '524196012679.dkr.ecr.eu-central-1.amazonaws.com' // SET VALUE
         DOCKER_USER = 'AWS'
         DOCKER_PWD = credentials('ecr-repo-pwd')
-        CONTAINER_PORT = '8080' // SET VALUE
+        CONTAINER_PORT = '80' // SET VALUE
         HOST_PORT = '8080' // SET VALUE
 
         AWS_ACCESS_KEY_ID = credentials('jenkins_aws_access_key_id')
