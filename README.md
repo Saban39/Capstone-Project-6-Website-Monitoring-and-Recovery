@@ -1,3 +1,18 @@
+## Capstone Project 6: Website Monitoring and Recovery
+
+### What did I build?
+I built an automated infrastructure and monitoring system using Python, Boto3, Docker, and Jenkins. I created an EC2 server on AWS using a Python script with the Boto3 library. On this server, I installed Docker and deployed an Nginx container. To ensure the Nginx service remained available, I developed a Python monitoring script that automatically restarted the container if it became unresponsive. I also integrated the entire setup into a Jenkins pipeline for full automation.
+
+### What have I learned?
+Through this project, I learned how to programmatically provision AWS EC2 instances using Boto3, manage Docker containers remotely with Python and SSH, and implement basic monitoring and self-healing mechanisms. I also gained practical experience with Jenkins pipelines and how to integrate infrastructure provisioning and application deployment into a CI/CD workflow.
+
+### My project description. 
+In this project, I created a Python script that uses Boto3 to launch an EC2 instance on AWS. The script defines the instance type, AMI, key pair, and security group. After provisioning, I installed Docker on the instance and deployed an Nginx container. I wrote a Python-based monitoring system using requests, paramiko, and schedule. The script checks if Nginx is accessible on port 8080. If the service fails five consecutive checks, it automatically reconnects to the server via SSH and restarts the Nginx container.
+
+This entire process was integrated into a Jenkins pipeline, making the provisioning, deployment, and monitoring fully automated. The project demonstrates practical knowledge of AWS infrastructure, Docker containerization, Python scripting, remote system administration, and DevOps best practices using Jenkins.
+
+# CAPSTONE PROJECT-6 project execution
+
 # 14 - Automation with Python
 #### This project is for the Devops Bootcamp module "14-Automation with Python" 
 
